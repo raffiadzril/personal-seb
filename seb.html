@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch SEB</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #5e3db5, #ff517f);
+            color: white;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .launch-btn {
+            background-color: #ff517f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 0.3s ease;
+        }
+
+        .launch-btn:hover {
+            background-color: #5e3db5;
+        }
+
+        .img-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://www.aspirasionline.com/wp-content/uploads/2019/10/BLTN63-FOKUS.jpg'); /* Ganti dengan URL background kamu */
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6);
+        }
+    </style>
+</head>
+<body>
+
+<div class="img-background"></div>
+
+<div class="container">
+    <h1>Welcome to SEB</h1>
+    <p>Your safe browsing experience starts here.</p>
+    <button class="launch-btn" onclick="launchSEB()">Launch SEB</button>
+</div>
+
+<script>
+    function launchSEB() {
+        // Replace this with your SEB launching mechanism or SEB file link
+        window.location.href = 'https://drive.google.com/file/d/1xngarqIVge5WXMW3mIhRdn50vpINEWiM/view?usp=drive_link'; // URL of your SEB file
+    }
+</script>
+
+</body>
+</html>
